@@ -1,13 +1,13 @@
 
 
 def turn_count(board)
-  turns = 0
+  player_turn = 0
   board.each do |free_space|
     if free_space == "X" || free_space == "O"
-      turns += 1
+     player_turn+= 1
     end
   end
-  return turns
+  return player_turn
 end
 
 def current_player(board)
